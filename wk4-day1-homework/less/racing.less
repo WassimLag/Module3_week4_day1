@@ -1,0 +1,101 @@
+// Import external files
+@import "colors.less";
+@import "fonts.less";
+
+// Global styles
+* {
+  box-sizing: border-box !important;
+  transition: ease all 0.5s;
+}
+
+body {
+  .text-style(@text-color, @light-text-color);
+  font-size: @base-font-size;
+  .font-style(@primary-font, @base-font-size, normal);
+  overflow-x: hidden;
+}
+
+// Main section
+.about_main {
+  .collection_section {
+    width: 100%;
+    float: left;
+    margin-top: 40px;
+
+    .container {
+      .new_text {
+        width: 100%;
+        float: left;
+        font-size: @large-font-size;
+        .text-style(@dark-text-color, none);
+      }
+
+      .consectetur_text {
+        width: 100%;
+        float: left;
+        font-size: 1.2em;
+        font-weight: 400;
+        .text-style(@dark-text-color, none);
+        margin-left: 0;
+        padding-bottom: 30px;
+      }
+    }
+  }
+
+  .collection_section_3 {
+    width: 100%;
+    float: left;
+    padding-top: 0;
+
+    .container {
+      .racing_shoes {
+        width: 100%;
+        float: left;
+        .text-style(@text-color, @secondary-color);
+        height: auto;
+        padding: 70px 0 100px;
+        background-size: 100%;
+        margin-bottom: 100px;
+
+        .shoes-img3 {
+          width: 100%;
+          float: left;
+          text-align: center;
+
+          img {
+            margin-top: 4em;
+            width: 70%;
+          }
+        }
+
+        .sale_text,
+        .number_text {
+          width: 100%;
+          float: left;
+          font-size: @extra-large-font-size;
+          .text-style(@primary-color, none);
+          line-height: 75px;
+        }
+
+        .seemore {
+          width: 80%;
+          height: 50px;
+          .text-style(@light-text-color, @primary-color);
+          font-size: 1.7em;
+          margin-top: 35px;
+        }
+      }
+    }
+  }
+}
+
+// Footer
+.copyright {
+  width: 100%;
+  float: left;
+  font-size: @base-font-size;
+  .text-style(@light-text-color, @primary-color);
+  text-align: center;
+  padding: 10px 0;
+  .font-style(@primary-font, @base-font-size, normal);
+}
